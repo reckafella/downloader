@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import YouTubeURLForm, QualitySelectionForm
+from .forms import YouTubeURLForm
 from pytube import YouTube
 import io
 

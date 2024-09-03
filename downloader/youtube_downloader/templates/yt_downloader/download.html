@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Downloader | {{ title }}</title>
-</head>
-<body>
+{% extends "yt_downloader/base.html" %}
+
+{% block title %}YouTube Downloader | {{ title }}{% endblock %}
+
+{% block content %}
     <h1>Download: {{ title }}</h1>
     <img src="{{ thumbnail_url }}", alt="thumbnail url">
     <ul>
@@ -20,5 +17,4 @@
             </li>
             {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
